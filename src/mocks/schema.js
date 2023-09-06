@@ -1,0 +1,31 @@
+export const schema = {
+  "type": "object",
+  "properties": {
+    "users": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "title": "Users",
+        "properties": {
+          "firstname": {
+            "type": "string"
+          },
+          "lastname": {
+            "type": "string"
+          },
+          "email": {
+            "type": "string",
+            "format": "email"
+          },
+          "age": {
+            "type": "number",
+            "minimum": 0
+          }
+        },
+        "required": [
+          "firstname"
+        ]
+      }
+    }
+  }
+}
